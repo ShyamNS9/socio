@@ -13,8 +13,10 @@ app = FastAPI()
 
 
 @app.get("/")
-def ServerUp(): 
+def ServerUp():
+    a = 10 + 10
 
+    print("hello", a)
     return {"response": "Hellow World"}
 
 
